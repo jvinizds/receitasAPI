@@ -167,10 +167,6 @@ function App() {
       }
     }
 
-    //let listaIngredientesFormatadoPrato = ingredientesPrato.map((ingrediente) => ingrediente.charAt(0).toUpperCase() + ingrediente.slice(1));
-
-    //let listaIngredientes = listaIngredientesFormatado.map((ingrediente) => <li>{ingrediente}</li>);
-
     /*For para passar por todas as propriedade e armazenar em um outro array apenas as medidas, caso não sejam nulos, vazios, etc*/
     for (const key in coquetel) {
       if (key.indexOf("strMeasure") > -1) 
@@ -184,8 +180,6 @@ function App() {
           }
       }
     }
-
-    //let listaMedidasFormatada = medidas.map((medida) => medida.charAt(0).toUpperCase() + medida.slice(1));
 
     /*For para passar pelos ingrediente e medidas e junta-los em um outro array para ficarem completos*/
     for (let k = 1; k < ingredientesCoquetel.length; k++) {
