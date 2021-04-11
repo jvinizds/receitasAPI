@@ -67,7 +67,7 @@ function App() {
       {
           if(!prato[key])
           {
-            i = i+1
+            continue;
           }else{
             ingredientesPrato[i] = prato[key]
             i = i+1
@@ -85,7 +85,7 @@ function App() {
       {
           if(!prato[key])
           {
-            j = j+1
+            continue;
           }else{
             medidasPrato[j] = prato[key]
             j = j+1
@@ -96,8 +96,13 @@ function App() {
     //let listaMedidasFormatada = medidas.map((medida) => medida.charAt(0).toUpperCase() + medida.slice(1));
 
     /*For para passar pelos ingrediente e medidas e junta-los em um outro array para ficarem completos*/
-    for (let k = 1; k < ingredientesPrato.length; k++) {
-      ingredienteCompletoPrato[k] = medidasPrato[k] + ' of ' +ingredientesPrato[k]
+    for (let k = 0; k < ingredientesPrato.length; k++) {
+      
+      if (!medidasPrato[k] ) {
+        ingredienteCompletoPrato[k] = ingredientesPrato[k]
+      }else{
+        ingredienteCompletoPrato[k] = medidasPrato[k] + ' of ' + ingredientesPrato[k]
+      }
     }
 
     let listaIngredientesPrato = ingredienteCompletoPrato.map((ingrediente) => <li>{ingrediente}</li>);
@@ -150,8 +155,8 @@ function App() {
     let ingredientesCoquetel = []
     let medidasCoquetel = []
     let ingredienteCompletoCoquetel = []
-    let i = 0
-    let j = 0
+    let x = 0
+    let z = 0
 
     /*For para passar por todas as propriedade e armazenar em um outro array apenas os ingredientes, caso não sejam nulos, vazios, etc*/
     for (const key in coquetel) {
@@ -159,10 +164,10 @@ function App() {
       {
           if(!coquetel[key])
           {
-            i = i+1
+            continue
           }else{
-            ingredientesCoquetel[i] = coquetel[key]
-            i = i+1
+            ingredientesCoquetel[x] = coquetel[key]
+            x = x+1
           }
       }
     }
@@ -173,20 +178,20 @@ function App() {
       {
           if(!coquetel[key])
           {
-            j = j+1
+            continue
           }else{
-            medidasCoquetel[j] = coquetel[key]
-            j = j+1
+            medidasCoquetel[z] = coquetel[key]
+            z = z+1
           }
       }
     }
 
     /*For para passar pelos ingrediente e medidas e junta-los em um outro array para ficarem completos*/
-    for (let k = 1; k < ingredientesCoquetel.length; k++) {
-      if (!medidasCoquetel[k] ) {
-        ingredienteCompletoCoquetel[k] = ingredientesCoquetel[k]
+    for (let g = 0; g < ingredientesCoquetel.length; g++) {
+      if (!medidasCoquetel[g] ) {
+        ingredienteCompletoCoquetel[g] = ingredientesCoquetel[g]
       }else{
-        ingredienteCompletoCoquetel[k] = medidasCoquetel[k] + ' of ' + ingredientesCoquetel[k]
+        ingredienteCompletoCoquetel[g] = medidasCoquetel[g] + ' of ' + ingredientesCoquetel[g]
       }
 
       
