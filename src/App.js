@@ -274,7 +274,6 @@ function App() {
           <Button variant="secondary" onClick={fecharPrato}>
             Close
           </Button>
-          <Button variant="primary">Understood</Button>
         </Modal.Footer>
       </Modal>
 
@@ -317,7 +316,6 @@ function App() {
           <Button variant="secondary" onClick={fecharCoquetel}>
             Close
           </Button>
-          <Button variant="primary">Understood</Button>
         </Modal.Footer>
       </Modal>
     </>
