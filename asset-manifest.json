@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/receitasAPI/static/js/main.e9ef5e34.chunk.js",
-    "main.js.map": "/receitasAPI/static/js/main.e9ef5e34.chunk.js.map",
+    "main.js": "/receitasAPI/static/js/main.8efbe704.chunk.js",
+    "main.js.map": "/receitasAPI/static/js/main.8efbe704.chunk.js.map",
     "runtime-main.js": "/receitasAPI/static/js/runtime-main.e6b5b579.js",
     "runtime-main.js.map": "/receitasAPI/static/js/runtime-main.e6b5b579.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/receitasAPI/static/css/2.4c97ca4f.chunk.css",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.e6b5b579.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.612ab48c.chunk.js",
-    "static/js/main.e9ef5e34.chunk.js"
+    "static/js/main.8efbe704.chunk.js"
   ]
 }
